@@ -53,4 +53,24 @@ def main() :
         print('You have come to the end of the session.')
         print('You did not perform any volume calculations')
 
+# Defining functions for calculating the volumes of the shapes
+
+def cubeVolume() :
+    sideLength = float(input('What is the length of one side of the cube?: '))
+    volume = sideLength ** 3
+    print('The volume of a pyramid with a side length of %f is %.1f' % (sideLength, volume))
+
+def pyramidVolume() :
+    base = float(input('What is the base length of the pyramid?: '))
+    height = float(input('What is the height of the pyramid?: '))
+    volume = (1 / 3) * (base ** 2) * height
+    print('The volume of a pyramid with a base of %f and a height of %f is %.1f' % (base, height, volume))
+
+def ellipsoidVolume() :
+    from math import pi
+    r1 = float(input('What is the value of radius 1?: '))
+    r2 = float(input('What is the value of radius 2?: '))
+    r3 = float(input('What is the value of radius 3?: '))
+    volume = (4 / 3) * pi * r1 * r2 * r3
+    print('The volume of an ellipsoid with a radius 1 of %f, a radius 2 of %f, and a radius 3 of %f is %.1f')
 main()
