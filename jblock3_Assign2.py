@@ -46,12 +46,15 @@ def main() :
     while not valid :
         if shapeInput == 'C' :
             cubeVolume()
+            print()
             shapeInput = (input('Please enter "C" to calculate the volume of a cube, "P" for the volume of a pyramid, "E" for the volume of an ellipsoid, or "quit" to quit: ')).upper()
         elif shapeInput == 'P' :
             pyramidVolume()
+            print()
             shapeInput = (input('Please enter "C" to calculate the volume of a cube, "P" for the volume of a pyramid, "E" for the volume of an ellipsoid, or "quit" to quit: ')).upper()
         elif shapeInput == 'E' :
             ellipsoidVolume()
+            print()
             shapeInput = (input('Please enter "C" to calculate the volume of a cube, "P" for the volume of a pyramid, "E" for the volume of an ellipsoid, or "quit" to quit: ')).upper()
         elif shapeInput == 'QUIT' :
             valid = True
