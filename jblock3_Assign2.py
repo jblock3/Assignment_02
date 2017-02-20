@@ -67,8 +67,19 @@ def main() :
         print('You have come to the end of the session.')
         print('The volumes calculated for each shape are shown below.')
 
-        print('Cube: ', cubeVolumeList)
-        print('Pyramid: ', pyramidVolumeList)
+        print('Cube: ', end = '')
+        i = 0
+        while i < len(cubeVolumeList) - 1 :
+            print(cubeVolumeList[i], ',', end = '')
+            i = i + 1
+        print(cubeVolumeList[len(cubeVolumeList) - 1])
+
+        print('Pyramid: ', end = '')
+        i = 0
+        while i < len(pyramidVolumeList) - 1 :
+            print(pyramidVolumeList[i], ',', end = '')
+            i = i + 1
+        print(pyramidVolumeList[len(pyramidVolumeList) - 1])
         print('Ellipsoid:', ellipsoidVolumeList)
     else :
         print('\nYou have come to the end of the session.')
