@@ -10,17 +10,17 @@
 def cubeVolume() :
     sideLength = float(input('What is the length of one side of the cube?: '))
     volume = sideLength ** 3
-    cubeVolumeList.append(volume)
+    cubeVolumeList.append(round(volume, 1))
     cubeVolumeList.sort()
-    print('The volume of a pyramid with a side length of %f is %.1f' % (sideLength, volume))
+    print('The volume of a pyramid with a side length of %f is %.1f' % (sideLength, round(volume, 1)))
 
 def pyramidVolume() :
     base = float(input('What is the base length of the pyramid?: '))
     height = float(input('What is the height of the pyramid?: '))
     volume = (1 / 3) * (base ** 2) * height
-    pyramidVolumeList.append(pyramidVolume)
+    pyramidVolumeList.append(round(volume, 1))
     pyramidVolumeList.sort()
-    print('The volume of a pyramid with a base of %f and a height of %f is %.1f' % (base, height, volume))
+    print('The volume of a pyramid with a base of %f and a height of %f is %.1f' % (base, height, round(volume, 1)))
 
 def ellipsoidVolume() :
     from math import pi
@@ -28,9 +28,9 @@ def ellipsoidVolume() :
     r2 = float(input('What is the value of radius 2?: '))
     r3 = float(input('What is the value of radius 3?: '))
     volume = (4 / 3) * pi * r1 * r2 * r3
-    ellipsoidVolumeList.append(ellipsoidVolume)
+    ellipsoidVolumeList.append(round(volume, 1))
     ellipsoidVolumeList.sort()
-    print('The volume of an ellipsoid with a radius 1 of %f, a radius 2 of %f, and a radius 3 of %f is %.1f')
+    print('The volume of an ellipsoid with a radius 1 of %f, a radius 2 of %f, and a radius 3 of %f is %.1f' % (r1, r2, r3, round(volume, 1)))
 
 # Initialization of empty lists
 
@@ -62,10 +62,10 @@ def main() :
     if len(cubeVolumeList) != 0 or len(pyramidVolumeList) != 0 or len(ellipsoidVolumeList) != 0 :
         print()
         print('You have come to the end of the session.')
-        print('The volumes calculated for each shape are shown below')
+        print('The volumes calculated for each shape are shown below.')
 
         print('Cube: ', cubeVolumeList)
-        print('Pyramid:', pyramidVolumeList)
+        print('Pyramid: ', pyramidVolumeList)
         print('Ellipsoid:', ellipsoidVolumeList)
     else :
         print('\nYou have come to the end of the session.')
