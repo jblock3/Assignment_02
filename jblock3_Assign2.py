@@ -12,7 +12,7 @@ def cubeVolume() :
     volume = sideLength ** 3
     cubeVolumeList.append(round(volume, 1))     # Adds the rounded volume to the given list
     cubeVolumeList.sort()
-    print('\nThe volume of a cube with a side length of %f is %.1f' % (sideLength, round(volume, 1)))
+    print('\nThe volume of a cube with a side length of %.1f is %.1f' % (round(sideLength, 1), round(volume, 1)))
 
 def pyramidVolume() :
     base = float(input('What is the base length of the pyramid?: '))
@@ -20,7 +20,7 @@ def pyramidVolume() :
     volume = (1 / 3) * (base ** 2) * height
     pyramidVolumeList.append(round(volume, 1))
     pyramidVolumeList.sort()
-    print('\nThe volume of a pyramid with a base length of %f and a height of %f is %.1f' % (base, height, round(volume, 1)))
+    print('\nThe volume of a pyramid with a base length of %.1f and a height of %.1f is %.1f' % (round(base, 1), round(height, 1), round(volume, 1)))
 
 def ellipsoidVolume() :
     from math import pi
@@ -30,7 +30,7 @@ def ellipsoidVolume() :
     volume = (4 / 3) * pi * r1 * r2 * r3
     ellipsoidVolumeList.append(round(volume, 1))
     ellipsoidVolumeList.sort()
-    print('\nThe volume of an ellipsoid with a radius 1 of %f, a radius 2 of %f, and a radius 3 of %f is %.1f' % (r1, r2, r3, round(volume, 1)))
+    print('\nThe volume of an ellipsoid with a radius 1 of %.1f, a radius 2 of %.1f, and a radius 3 of %.1f is %.1f' % (round(r1, 1), round(r2, 1), round(r3, 1), round(volume, 1)))
 
 # Initialization of empty lists
 
